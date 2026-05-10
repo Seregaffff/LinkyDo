@@ -1,0 +1,15 @@
+.pay {
+    width: 600px;
+    min-height: 100vh;   /* вместо height: 400px */
+    margin: auto;
+    padding-bottom: 300px; /* чтобы кнопка не пряталась */
+
+    h2 {
+        margin: 20px 0 40px 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 90%;
+        padding-bottom: 200px;
+    }
+}

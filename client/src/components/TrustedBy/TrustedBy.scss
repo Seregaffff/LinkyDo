@@ -1,0 +1,56 @@
+.trustedBy {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        color: #b5b6ba;
+        font-weight: 600;
+
+        span {
+            font-size: 16px;
+            white-space: nowrap;
+            
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+
+        img {
+            height: 40px;      // Уменьшили с 70px до 40px
+            width: auto;
+            object-fit: contain;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
+
+            @media screen and (max-width: 900px) {
+                height: 35px;   // На планшетах чуть меньше
+            }
+
+            @media screen and (max-width: 600px) {
+                height: 30px;   // На мобильных ещё меньше
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            gap: 25px;
+            justify-content: center;
+        }
+        
+        @media screen and (max-width: 600px) {
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.tax-report-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+}
+
+.info-card, .steps-card, .download-card, .fact-data-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #34495e;
+  }
+}
+
+.info-card {
+  border-left: 4px solid #e67e22;
+}
+
+.steps-card ol {
+  padding-left: 1.5rem;
+  li {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+}
+
+.fact-data-card {
+  background: #f1f8fe;
+  border-left: 4px solid #2196F3;
+
+  .fact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .fact-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+
+    span {
+      display: block;
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 0.3rem;
+    }
+
+    strong {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
+    &.highlight strong {
+      color: #e67e22;
+    }
+  }
+}
+
+.download-card {
+  background: #eaf7ea;
+  border-left: 4px solid #27ae60;
+
+  .download-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+    .download-btn, .edit-btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      color: white;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .download-btn {
+      background-color: #4CAF50;
+      &:hover:not(:disabled) {
+        background-color: #45a049;
+      }
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+
+    .edit-btn {
+      background-color: #2196F3;
+      &:hover {
+        background-color: #1976D2;
+      }
+    }
+  }
+}
+
+.back-link {
+  color: #3498db;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

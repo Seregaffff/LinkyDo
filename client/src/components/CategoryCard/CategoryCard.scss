@@ -1,0 +1,85 @@
+.categoryCardLink {
+  text-decoration: none;
+}
+
+.categoryCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(29,191,115,0.15);
+    border-color: #1dbf73;
+    
+    .iconWrapper {
+      background: #1dbf73;
+      transform: rotate(5deg);
+      // УБИРАЕМ ИЛИ КОММЕНТИРУЕМ ЭТИ СТРОКИ:
+      // img {
+      //   filter: brightness(0) invert(1);
+      // }
+    }
+    
+    .title {
+      color: #1dbf73;
+    }
+  }
+  
+  .iconWrapper {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    
+    img {
+      width: 100%;
+      max-width: 80px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      transition: all 0.3s ease;
+    }
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #222;
+    transition: color 0.3s ease;
+  }
+  
+  .desc {
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    padding: 15px;
+    
+    .iconWrapper {
+      padding: 15px;
+      
+      img {
+        max-width: 50px;
+      }
+    }
+    
+    .title {
+      font-size: 14px;
+    }
+    
+    .desc {
+      font-size: 11px;
+    }
+  }
+}
